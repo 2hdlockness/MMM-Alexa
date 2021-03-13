@@ -1,6 +1,6 @@
 {
   "name": "MMM-Alexa",
-  "version": "0.9.0-beta1",
+  "version": "1.0.0-beta",
   "description": "An embedded Amazon Alexa on MagicMirror.",
   "main": "MMM-Alexa.js",
   "keywords": [
@@ -12,7 +12,10 @@
     "assistant for device"
   ],
   "scripts": {
-    "update": "installer/update.sh"
+    "preinstall": "installer/preinstall.sh",
+    "postinstall": "installer/postinstall.sh",
+    "update": "installer/update.sh",
+    "micConfig": "installer/micConfig.sh"
   },
   "author": "bugsounet",
   "license": "MIT",
